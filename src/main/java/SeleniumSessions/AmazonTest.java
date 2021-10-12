@@ -8,7 +8,7 @@ public class AmazonTest {
 		br.initDriver("chrome");
 		
 		br.lauchUrl("https://www.amazon.com");
-		
+		System.out.println("url is luanched....");
 		String title = br.getPageTitle();
 		System.out.println(title);
 
