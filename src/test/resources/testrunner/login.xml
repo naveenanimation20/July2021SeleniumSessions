@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="App Test Suite" verbose="4">
+
+	<test name="Login Negative Test">
+		<parameter name="url"
+			value="https://demo.opencart.com/index.php?route=account/login" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="TestCases.LoginNegativeTest" />
+		</classes>
+	</test>
+
+
+
+
+</suite>

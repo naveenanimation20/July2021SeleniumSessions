@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="App Test Suite" thread-count="3" parallel="tests"
+	verbose="4">
+
+	<test name="Amazon Test_safari">
+		<parameter name="url" value="https://www.amazon.com" />
+		<parameter name="browser" value="safari" />
+		<classes>
+			<class name="TestCases.AmazonTest" />
+		</classes>
+	</test>
+
+	<test name="Freshwork Test_safari">
+		<parameter name="url" value="https://www.freshworks.com/" />
+		<parameter name="browser" value=""safari"" />
+
+		<classes>
+			<class name="TestCases.FreshworkTest" />
+		</classes>
+	</test>
+
+	<test name="Google Test_safari">
+		<parameter name="url" value="https://www.google.com" />
+		<parameter name="browser" value=""safari"" />
+
+		<classes>
+			<class name="TestCases.GoogleTest" />
+		</classes>
+	</test>
+
+
+
+</suite>
